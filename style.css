@@ -5,23 +5,128 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   height: 40px;
   background-color: #FFE6C7;
 }
-.navbar__links {
-  display: flex;
-  gap: 1.2em;
-  padding-right: 20px;
+.navbar__content {
+  width: 80%;
 }
-.navbar__links a {
+.navbar__content__links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.2em;
+}
+.navbar__content__links a {
   color: #454545;
   text-decoration: none;
   text-transform: uppercase;
 }
-.navbar__links a:hover {
+.navbar__content__links a:hover {
   transform: scale(1.05);
+}
+
+.hero {
+  height: 150px;
+  background-color: #FFE6C7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero-text {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero .hero-title {
+  font-size: 2em;
+}
+.hero .hero-subtitle {
+  font-size: 1.2em;
+}
+
+.skills {
+  height: 250px;
+  background-color: #454545;
+  color: #FF6000;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.skills__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.skills__content__items {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+}
+
+.projects {
+  background-color: #FFE6C7;
+  color: #454545;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.projects__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  gap: 20px;
+}
+.projects__content__title {
+  font-size: 1.2em;
+}
+.projects__content__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2em;
+}
+.projects .card {
+  background-color: #454545;
+  color: #FFE6C7;
+  width: 350px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects .card__title {
+  font-size: 1.2em;
+}
+.projects .card__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: 10px;
+}
+.projects .card__body__img {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.projects .card__body .img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.projects .card__body__text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.projects .card__links {
+  display: flex;
+  gap: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
