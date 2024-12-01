@@ -140,3 +140,97 @@ body {
     }
 }
 
+.education {
+    background-color: c.$grey-dark;
+    color: c.$orange-dark;
+    display: flex;
+    justify-content: center;
+    padding: v.$section-padding;
+    &__content {
+        //border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: v.$text-width;
+        gap: 20px;
+        &__title {
+            //border: 1px solid red;
+            font-size: 1.2em;
+        }
+        &__items {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            gap: 4em;
+            
+        }
+        .institute {
+            padding: v.$section-padding;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            color: c.$orange-light;
+            &__name {
+                font-size: 1.2em;
+            }
+            &__course {
+                font-size: 1.5em;
+                
+            }
+        }
+    }
+}
+
+.contact {
+    background-color: c.$orange-light;
+    color: c.$grey-dark;
+    display: flex;
+    justify-content: center;
+    padding: v.$section-padding;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: v.$text-width;
+        &__title {
+            font-size: 1.2em;
+        }
+        &__items {
+            //border: 1px solid red;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            gap: 2em;
+            padding: v.$section-padding;
+            img {
+                
+            }
+            .about {
+                color: c.$grey-dark;
+                font-size: medium;
+            }
+            .contacts-list {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 0.9em;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: c.$orange-light;
+    color: c.$grey-dark;
+    display: flex;
+    justify-content: center;
+    padding: v.$section-padding;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: v.$text-width;
+    }
+}
