@@ -201,4 +201,18 @@ body {
   gap: 0.9em;
 }
 
+.footer {
+  background-color: #FFE6C7;
+  color: #454545;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+
 /*# sourceMappingURL=style.css.map */
