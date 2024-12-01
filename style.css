@@ -129,4 +129,41 @@ body {
   gap: 20px;
 }
 
+.education {
+  background-color: #454545;
+  color: #FF6000;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.education__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  gap: 20px;
+}
+.education__content__title {
+  font-size: 1.2em;
+}
+.education__content__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 4em;
+}
+.education__content .institute {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  color: #FFE6C7;
+}
+.education__content .institute__name {
+  font-size: 1.2em;
+}
+.education__content .institute__course {
+  font-size: 1.5em;
+}
+
 /*# sourceMappingURL=style.css.map */

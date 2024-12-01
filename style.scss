@@ -140,3 +140,66 @@ body {
     }
 }
 
+.education {
+    background-color: c.$grey-dark;
+    color: c.$orange-dark;
+    display: flex;
+    justify-content: center;
+    padding: v.$section-padding;
+    &__content {
+        //border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: v.$text-width;
+        gap: 20px;
+        &__title {
+            //border: 1px solid red;
+            font-size: 1.2em;
+        }
+        &__items {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            gap: 4em;
+            
+        }
+        .institute {
+            padding: v.$section-padding;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            color: c.$orange-light;
+            &__name {
+                font-size: 1.2em;
+            }
+            &__course {
+                font-size: 1.5em;
+                
+            }
+        }
+    }
+}
+
+// .skills {
+//     height: 250px;
+//     background-color: c.$grey-dark;
+//     color: c.$orange-dark;
+//     display: flex;
+//     justify-content: center;
+//     padding: v.$section-padding;
+//     &__content {
+//         height: 100%;
+//         //padding: 10px;
+//         display: flex;
+//         flex-direction: column;
+//         width: v.$text-width;
+//         &__items {
+//             height: 80%;
+//             //border: 1px solid red;
+//             display: flex;
+//             align-items: center;
+//             gap: 1.2em;
+//         }
+//     }
+// }
