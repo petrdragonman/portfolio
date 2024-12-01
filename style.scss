@@ -1,0 +1,221 @@
+@use "./SCSS/partials/colors" as c;
+@use "./SCSS/partials/variables" as v;
+
+
+body {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: c.$orange-light;
+    //padding: v.$section-padding;
+    &__content {
+        width: v.$text-width;
+        &__links {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1.2em;
+            a {
+                color: c.$grey-dark;
+                text-decoration: none;
+                text-transform: uppercase;
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+    
+}
+
+.hero {
+    height: 150px;
+    background-color: c.$orange-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //padding: v.$section-padding;
+    .hero-text {
+        width: v.$text-width;
+        //padding: v.$section-padding;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hero-title {
+        font-size: 2em;
+    }
+    .hero-subtitle {
+        font-size: 1.2em;
+    }
+}
+
+.skills {
+    height: 250px;
+    background-color: c.$grey-dark;
+    color: c.$orange-dark;
+    display: flex;
+    justify-content: center;
+    padding: v.$section-padding;
+    &__content {
+        height: 100%;
+        //padding: 10px;
+        display: flex;
+        flex-direction: column;
+        width: v.$text-width;
+        &__items {
+            height: 80%;
+            //border: 1px solid red;
+            display: flex;
+            align-items: center;
+            gap: 1.2em;
+        }
+    }
+}
+
+.projects {
+    background-color: c.$orange-light;
+    color: c.$grey-dark;
+    display: flex;
+    justify-content: center;
+    padding: v.$section-padding;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: v.$text-width;
+        gap: 20px;
+        &__title {
+            font-size: 1.2em;
+        }
+        &__items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.2em;
+        } 
+    }
+
+    .card {
+        background-color: c.$grey-dark;
+        color: c.$orange-light;
+        width: 350px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__title {
+            font-size: 1.2em;
+        }
+        &__body {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            padding: 10px;
+            &__img {
+                display: flex;
+                justify-content: center;
+                width: 50%;
+            }
+            .img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+            &__text {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+            }
+        }
+        &__links {
+            display: flex;
+            gap: 20px;
+        }
+    }
+}
+
+.education {
+    background-color: c.$grey-dark;
+    color: c.$orange-dark;
+    display: flex;
+    justify-content: center;
+    padding: v.$section-padding;
+    &__content {
+        //border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: v.$text-width;
+        gap: 20px;
+        &__title {
+            //border: 1px solid red;
+            font-size: 1.2em;
+        }
+        &__items {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            gap: 4em;
+            
+        }
+        .institute {
+            padding: v.$section-padding;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            color: c.$orange-light;
+            &__name {
+                font-size: 1.2em;
+            }
+            &__course {
+                font-size: 1.5em;
+                
+            }
+        }
+    }
+}
+
+.contact {
+    background-color: c.$orange-light;
+    color: c.$grey-dark;
+    display: flex;
+    justify-content: center;
+    padding: v.$section-padding;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: v.$text-width;
+        &__title {
+            font-size: 1.2em;
+        }
+        &__items {
+            //border: 1px solid red;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            gap: 2em;
+            padding: v.$section-padding;
+            img {
+                
+            }
+            .about {
+                color: c.$grey-dark;
+                font-size: medium;
+            }
+            .contacts-list {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 0.9em;
+            }
+        }
+    }
+}
