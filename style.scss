@@ -13,7 +13,6 @@ body {
     align-items: center;
     height: 40px;
     background-color: c.$orange-light;
-    //padding: v.$section-padding;
     &__content {
         width: v.$text-width;
         &__links {
@@ -39,41 +38,50 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    //padding: v.$section-padding;
-    .hero-text {
+    &__text {
         width: v.$text-width;
-        //padding: v.$section-padding;
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-    .hero-title {
-        font-size: 2em;
-    }
-    .hero-subtitle {
-        font-size: 1.2em;
+        &__title {
+            font-size: 2em;
+        }
+        &__subtitle {
+            font-size: 1.2em;
+        }
     }
 }
 
 .skills {
-    height: 250px;
+    //height: 250px;
     background-color: c.$grey-dark;
-    color: c.$orange-dark;
+    color: c.$orange-light;
     display: flex;
     justify-content: center;
     padding: v.$section-padding;
     &__content {
         height: 100%;
-        //padding: 10px;
         display: flex;
         flex-direction: column;
+        gap: 50px;
         width: v.$text-width;
+        &__title {
+            font-size: v.$section-title-size;
+        }
         &__items {
             height: 80%;
-            //border: 1px solid red;
             display: flex;
-            align-items: center;
-            gap: 1.2em;
+            justify-content: start;
+            align-items: baseline;
+            gap: 4em;
+            &__card{
+                color: c.$orange-light;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 0.5em;
+            }
         }
     }
 }
@@ -91,7 +99,7 @@ body {
         width: v.$text-width;
         gap: 20px;
         &__title {
-            font-size: 1.2em;
+            font-size: v.$section-title-size;
         }
         &__items {
             display: flex;
@@ -110,7 +118,7 @@ body {
         flex-direction: column;
         align-items: center;
         &__title {
-            font-size: 1.2em;
+            font-size: v.$section-title-size;
         }
         &__body {
             display: flex;
@@ -142,25 +150,24 @@ body {
 
 .education {
     background-color: c.$grey-dark;
-    color: c.$orange-dark;
+    color: c.$orange-light;
     display: flex;
     justify-content: center;
     padding: v.$section-padding;
     &__content {
-        //border: 1px solid red;
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: v.$text-width;
         gap: 20px;
         &__title {
-            //border: 1px solid red;
-            font-size: 1.2em;
+            font-size: v.$section-title-size;
         }
         &__items {
             display: flex;
             flex-direction: row;
             justify-content: start;
+            align-items: flex-end;
             gap: 4em;
             
         }
@@ -169,7 +176,11 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: start;
+            //align-items: baseline;
             color: c.$orange-light;
+            img {
+                padding-bottom: 10px;
+            }
             &__name {
                 font-size: 1.2em;
             }
@@ -193,18 +204,22 @@ body {
         justify-content: center;
         width: v.$text-width;
         &__title {
-            font-size: 1.2em;
+            font-size: v.$section-title-size;
         }
         &__items {
-            //border: 1px solid red;
             display: flex;
             flex-direction: row;
             justify-content: start;
             align-items: center;
-            gap: 2em;
+            gap: 4em;
             padding: v.$section-padding;
             img {
-                
+                border-radius: 50%;
+                /* Position and center the image to scale nicely on all screens */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
             }
             .about {
                 color: c.$grey-dark;
