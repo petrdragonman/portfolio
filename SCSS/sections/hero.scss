@@ -1,0 +1,22 @@
+@use "../partials/colors" as c;
+@use "../partials/variables" as v;
+
+.hero {
+  height: 150px;
+  background-color: c.$orange-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__text {
+    width: v.$text-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__title {
+      font-size: 2em;
+    }
+    &__subtitle {
+      font-size: 1.2em;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@use "../partials/colors" as c;
+@use "../partials/variables" as v;
+
+.skills {
+  background-color: c.$grey-dark;
+  color: c.$orange-light;
+  display: flex;
+  justify-content: center;
+  padding: v.$section-padding;
+  &__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: v.$text-width;
+    &__title {
+      font-size: v.$section-title-size;
+    }
+    &__items {
+      height: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: baseline;
+      gap: 4em;
+      &__card {
+        color: c.$orange-light;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.5em;
+      }
+    }
+  }
+}

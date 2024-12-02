@@ -1,2 +1,27 @@
+@use "../partials/colors" as c;
+@use "../partials/variables" as v;
+//@use "../partials/media-queries/" as q;
 
-
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: c.$orange-light;
+  &__content {
+    width: v.$text-width;
+    &__links {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1.2em;
+      a {
+        color: c.$grey-dark;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
