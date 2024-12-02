@@ -1,0 +1,18 @@
+@use "../partials/colors" as c;
+@use "../partials/variables" as v;
+//@use "../partials/media-queries" as q;
+
+.footer {
+  background-color: c.$orange-light;
+  color: c.$grey-dark;
+  display: flex;
+  justify-content: center;
+  padding: v.$section-padding;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: v.$text-width;
+  }
+}
