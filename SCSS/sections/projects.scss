@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     width: v.$text-width;
     gap: 20px;
     &__title {
@@ -26,66 +27,96 @@
     .card {
       background-color: c.$grey-dark;
       color: c.$orange-light;
+      border-radius: 10px;
       width: 350px;
       padding: 10px;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       align-items: center;
+      //border: 1x solid red;
+      @include q.large-tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        //border: 1x solid red;
+      }
       &__title {
         font-size: v.$section-title-size;
       }
       &__body {
-        @include q.phone {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          padding: 10px;
-        }
-        @include q.tablet {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          padding: 10px;
-        }
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        //border: 1x solid red;
         @include q.large-tablet {
-          display: flex;
-          flex-direction: row;
-          ustify-content: start;
-          padding: 10px;
-        }
-        @include q.laptop {
+          width: 100%;
           display: flex;
           flex-direction: row;
           justify-content: start;
-          padding: 10px;
-        }
-        @include q.desktop {
-          display: flex;
-          flex-direction: row;
-          justify-content: start;
-          padding: 10px;
+          //border: 1px solid red;
         }
         &__img {
           display: flex;
           justify-content: center;
-          width: 50%;
-        }
-        .img {
           width: 100%;
-          height: auto;
-          object-fit: cover;
+          @include q.large-tablet {
+            width: 40%;
+            display: flex;
+            justify-content: flex-start;
+          }
         }
         &__text {
           display: flex;
           flex-direction: column;
-          width: 50%;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          gap: 10px;
+          @include q.large-tablet {
+            padding-left: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            gap: 30px;
+          }
+          &__icon {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 10px;
+            @include q.large-tablet {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              gap: 20px;
+            }
+          }
         }
       }
       &__links {
+        width: 90%;
         display: flex;
-        gap: 20px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        padding-top: 10px;
+        @include q.tablet {
+          width: 90%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 60px;
+        }
       }
     }
   }

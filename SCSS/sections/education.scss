@@ -21,11 +21,12 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      justify-content: start;
+      justify-content: center;
       align-items: flex-end;
       gap: 4em;
     }
     .institute {
+      
       padding: v.$section-padding;
       display: flex;
       flex-direction: column;

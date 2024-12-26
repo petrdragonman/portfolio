@@ -20,9 +20,9 @@
       height: 80%;
       display: flex;
       flex-wrap: wrap;
-      justify-content: start;
+      justify-content: center;
       align-items: baseline;
-      gap: 4em;
+      gap: 3em;
       &__card {
         color: c.$orange-light;
         display: flex;
