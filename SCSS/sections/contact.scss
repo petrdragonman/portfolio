@@ -1,0 +1,81 @@
+@use "../partials/colors" as c;
+@use "../partials/variables" as v;
+@use "../partials/media-queries" as q;
+
+.contact {
+  background-color: c.$orange-light;
+  color: c.$grey-dark;
+  display: flex;
+  justify-content: center;
+  padding: v.$section-padding;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: v.$text-width;
+    &__title {
+      font-size: v.$section-title-size;
+    }
+    &__items {
+      @include q.phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 4em;
+        padding: v.$section-padding;
+      }
+      @include q.tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 4em;
+        padding: v.$section-padding;
+      }
+      @include q.large-tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 4em;
+        padding: v.$section-padding;
+      }
+      @include q.laptop {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 4em;
+        padding: v.$section-padding;
+      }
+      @include q.desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 4em;
+        padding: v.$section-padding;
+      }
+      .petr {
+        border-radius: 50%;
+        /* Position and center the image to scale nicely on all screens */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      .about {
+        color: c.$grey-dark;
+        font-size: medium;
+      }
+      .contacts-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        gap: 1.9em;
+      }
+    }
+  }
+}

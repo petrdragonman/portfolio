@@ -1,0 +1,46 @@
+@use "../partials/colors" as c;
+@use "../partials/variables" as v;
+@use "../partials/media-queries" as q;
+
+.education {
+  background-color: c.$grey-dark;
+  color: c.$orange-light;
+  display: flex;
+  justify-content: center;
+  padding: v.$section-padding;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: v.$text-width;
+    gap: 20px;
+    &__title {
+      font-size: v.$section-title-size;
+    }
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 4em;
+    }
+    .institute {
+      
+      padding: v.$section-padding;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      color: c.$orange-light;
+      img {
+        padding-bottom: 10px;
+      }
+      &__name {
+        font-size: 1.2em;
+      }
+      &__course {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
