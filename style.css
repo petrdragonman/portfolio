@@ -81,18 +81,30 @@
   color: #454545;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 40px 0px;
+  width: 100%;
 }
 .projects__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 80%;
+  width: 100%;
   gap: 20px;
 }
-.projects__content__title {
+.projects__content__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.projects__content__text__title {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
   font-size: 1.5em;
+  width: 80%;
 }
 .projects__content__items {
   display: flex;
@@ -152,16 +164,11 @@
 .projects__content .card__body__text {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   gap: 10px;
 }
-
-.stack {
-  width: 100%;
-}
-
 @media screen and (min-width: 769px) {
   .projects__content .card__body__text {
     padding-left: 10px;
@@ -185,9 +192,8 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 20px;
-    padding-left: 10px;
   }
 }
 .projects__content .card__links {
@@ -196,7 +202,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 30px;
   padding-top: 10px;
 }
 @media screen and (min-width: 577px) {
@@ -241,6 +247,7 @@
   flex-direction: column;
   justify-content: start;
   color: #ffe6c7;
+  gap: 6px;
 }
 .education__content .institute img {
   padding-bottom: 10px;
