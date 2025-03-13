@@ -1,248 +1,584 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <section class="navbar__content">
-            <section class="navbar__content__links">
-                <a href="#hero-id">Home</a>
-                <a href="#skills-id">Skills</a>
-                <a href="#projects-id">Projects</a>
-                <a href="#education-id">Education</a>
-                <!-- <a href="#about">About</a> -->
-                <a href="#contact-id">Contact</a>
-            </section>
+      <section class="navbar__content">
+        <section class="navbar__content__links">
+          <a href="#hero-id">Home</a>
+          <a href="#skills-id">Skills</a>
+          <a href="#projects-id">Projects</a>
+          <a href="#education-id">Education</a>
+          <a href="#contact-id">Contact</a>
         </section>
+      </section>
     </nav>
     <main>
-        <section class="hero" id="hero-id">
-            <article class="hero__text">
-                <span class="hero__text__title">Petr Valouch</span>
-                <span class="hero__text__subtitle">Junior Full Stack Developer</span>
+      <section class="hero" id="hero-id">
+        <article class="hero__text">
+          <span class="hero__text__title">Petr Valouch</span>
+          <span class="hero__text__subtitle">Junior Full Stack Developer</span>
+        </article>
+      </section>
+      <section class="skills" id="skills-id">
+        <section class="skills__content">
+          <article class="skills__content__title">CODING SKILLS</article>
+          <section class="skills__content__items">
+            <section class="skills__content__items__card">
+              <img
+                src="./asset/html5-light.svg"
+                alt="logo of html5"
+                width="35px"
+              />
+              <span>HTML</span>
+            </section>
+            <section class="skills__content__items__card">
+              <img src="./asset/css-light.svg" alt="logo of css" width="40px" />
+              <span>CSS</span>
+            </section>
+            <section class="skills__content__items__card">
+              <img
+                src="./asset/sass-light.svg"
+                alt="logo of sass"
+                width="50px"
+              />
+              <span>Sass</span>
+            </section>
+            <section class="skills__content__items__card">
+              <img src="./asset/js-light.svg" alt="logo of js" width="40px" />
+              <span>JavaScript</span>
+            </section>
+            <section class="skills__content__items__card">
+              <img
+                src="./asset//swift-light.svg"
+                alt="logo of swift"
+                width="40px"
+              />
+              <span>Swift</span>
+            </section>
+            <section class="skills__content__items__card">
+              <img
+                src="./asset/swift-light.svg"
+                alt="logo of swift-ui"
+                width="40px"
+              />
+              <span>Swift UI</span>
+            </section>
+            <section class="skills__content__items__card">
+              <img
+                src="./asset/react-light.svg"
+                alt="logo of react"
+                width="45px"
+              />
+              <span>React</span>
+            </section>
+            <section class="skills__content__items__card">
+              <img
+                src="./asset/java-light.svg"
+                alt="logo of java"
+                width="45px"
+              />
+              <span>Java</span>
+            </section>
+            <section class="skills__content__items__card">
+              <img src="./asset/ts.svg" alt="logo of Typescript" width="45px" />
+              <span>Typescript</span>
+            </section>
+            <section class="skills__content__items__card">
+              <img
+                src="./asset/spring.png"
+                alt="logo of spring boot"
+                width="45px"
+              />
+              <span>Spring Boot</span>
+            </section>
+          </section>
+        </section>
+      </section>
+      <section class="projects" id="projects-id">
+        <section class="projects__content">
+          <article class="projects__content__title">PROJECTS</article>
+          <section class="projects__content__items">
+            <!--  -->
+
+            <!--  -->
+            <article class="card">
+              <span class="card__title">Todo app</span>
+              <section class="card__body">
+                <p class="card__body__img">
+                  <img
+                    src="./asset/projects/todo.jpg"
+                    width="140px"
+                    alt="mine sweeper app"
+                  />
+                </p>
+                <section class="card__body__text">
+                  <span>
+                    Todo app is a full stack application, allowing user to
+                    create, update and delete todo task ans category.
+                  </span>
+                  <span class="stack">
+                    Stack: React, JavaScript, Sass, SpringBoot, Java
+                  </span>
+                  <span class="card__body__text__icon">
+                    <img src="./asset/ts.svg" alt="js image" width="30px" />
+                    <img
+                      src="./asset/reactjs-light.svg"
+                      alt="js image"
+                      width="30px"
+                    />
+                    <img
+                      src="./asset/java-light.svg"
+                      alt="java image"
+                      width="30px"
+                    />
+                    <img
+                      src="./asset/spring.png"
+                      alt="spring boot image"
+                      width="35px"
+                    />
+                  </span>
+                </section>
+              </section>
+              <section class="card__links">
+                <span>
+                  <a href="https://github.com/petrdragonman/minesweeper">
+                    <img
+                      src="./asset/github-light.svg"
+                      alt="git"
+                      width="25px"
+                    />
+                  </a>
+                </span>
+              </section>
             </article>
-        </section>
-        <section class="skills" id="skills-id">
-            <section class="skills__content">
-                <article class="skills__content__title">CODING SKILLS</article>
-                <section class="skills__content__items">
-                    <section class="skills__content__items__card">
-                        <img src="./asset/html5-light.svg" alt="logo of html5" width="35px">
-                        <span>HTML</span>
-                    </section>
-                    <section class="skills__content__items__card">
-                        <img src="./asset/css-light.svg" alt="logo of css" width="40px">
-                        <span>CSS</span>
-                    </section>
-                    <section class="skills__content__items__card">
-                        <img src="./asset/sass-light.svg" alt="logo of sass" width="50px">
-                        <span>Sass</span>
-                    </section>
-                    <section class="skills__content__items__card">
-                        <img src="./asset/js-light.svg" alt="logo of js" width="40px">
-                        <span>JavaScript</span>
-                    </section>
-                    <section class="skills__content__items__card">
-                        <img src="./asset//swift-light.svg" alt="logo of swift" width="40px">
-                        <span>Swift</span>
-                    </section>
-                    <section class="skills__content__items__card">
-                        <img src="./asset/swift-light.svg" alt="logo of swift-ui" width="40px">
-                        <span>Swift UI</span>
-                    </section>
-                    <section class="skills__content__items__card">
-                        <img src="./asset/react-light.svg" alt="logo of react" width="45px">
-                        <span>React</span>
-                    </section>
-                </section>
-            </section>
-        </section>
-        <section class="projects" id="projects-id">
-            <section class="projects__content">
-                <article class="projects__content__title">PROJECTS</article>
-                <section class="projects__content__items">
 
-                    <article class="card">
-                        <span class="card__title">Hangman</span>
-                        <section class="card__body">
-                            <p class="card__body__img">
-                                <img src="./asset/projects/hangman.jpg" width="140px" alt="iRemember app home screen">
-                            </p>
-                            <section class="card__body__text">
-                                <span>
-                                    Hangman is an old word guessing game.
-                                </span>
-                                <span>
-                                    Writen using HTMl, SCSS and JavaScript.
-                                </span>
-                                <span class="card__body__text__icon">
-                                    <img src="./asset/html5-light.svg" alt="htnl image" width="30px">
-                                    <img src="./asset/css-light.svg" alt="css image" width="35px">
-                                    <img src="./asset/js-light.svg" alt="js image" width="35px">
-                                </span>
-                            </section>
-                        </section>
-                        <section class="card__links">
-                            <span><img src="./asset/email-light.svg" alt="email" width="25px"></span>
-                            <span><img src="./asset/github-light.svg" alt="git" width="25px"></span>
-                            <span><img src="./asset/link-light.svg" alt="link" width="25px"></span>
-                        </section>
-                    </article>
-                    <article class="card">
-                        <span class="card__title">Morse-translator</span>
-                        <section class="card__body">
-                            <p class="card__body__img">
-                                <img src="./asset/projects//morse-translator.jpg" width="140px" alt="morse-translator app home screen">
-                            </p>
-                            <section class="card__body__text">
-                                <span>
-                                    Morse-translator is a simple app to translate from English 
-                                    to morse-code and reverse.
-                                </span>
-                                <span>
-                                    Writen using HTMl, SCSS and JavaScript.
-                                </span>
-                                <span class="card__body__text__icon">
-                                    <img src="./asset/html5-light.svg" alt="htnl image" width="30px">
-                                    <img src="./asset/css-light.svg" alt="css image" width="35px">
-                                    <img src="./asset/js-light.svg" alt="js image" width="35px">
-                                </span>
-                            </section>
-                        </section>
-                        <section class="card__links">
-                            <span><img src="./asset/email-light.svg" alt="email" width="25px"></span>
-                            <span><img src="./asset/github-light.svg" alt="git" width="25px"></span>
-                            <span><img src="./asset/link-light.svg" alt="link" width="25px"></span>
-                        </section>
-                    </article>
-                    <article class="card">
-                        <span class="card__title">Fake OS</span>
-                        <section class="card__body">
-                            <p class="card__body__img">
-                                <img src="./asset/projects/FakeOS.png" width="140px" alt="morse-translator app home screen">
-                            </p>
-                            <section class="card__body__text">
-                                <span>
-                                    Fake OS is a copy of an older iOS. 
-                                    The only working features are current time and the Weather app.
-                                    The app is fetching data from Weather Api.
-                                </span>
-                                <span>
-                                    Writen using HTMl, SCSS and JavaScript.
-                                </span>
-                                <span class="card__body__text__icon">
-                                    <img src="./asset/html5-light.svg" alt="htnl image" width="30px">
-                                    <img src="./asset/css-light.svg" alt="css image" width="35px">
-                                    <img src="./asset/js-light.svg" alt="js image" width="35px">
-                                </span>
-                            </section>
-                        </section>
-                        <section class="card__links">
-                            <span><img src="./asset/email-light.svg" alt="email" width="25px"></span>
-                            <span><img src="./asset/github-light.svg" alt="git" width="25px"></span>
-                            <span><img src="./asset/link-light.svg" alt="link" width="25px"></span>
-                        </section>
-                    </article>
-                    <article class="card">
-                        <span class="card__title">iRemember</span>
-                        <section class="card__body">
-                            <p class="card__body__img">
-                                <img src="./asset/projects/iRemember.png" width="150px" alt="iRemember app home screen">
-                            </p>
-                            <section class="card__body__text">
-                                <span >
-                                    iRemember is a simple iOS app to store all of your 
-                                    login or any similar details securely into your 
-                                    personal iCloud account.
-                                </span>
-                                <span >
-                                    Writen in Swift UI using Swift Data.
-                                </span>
-                                <span class="card__body__text__icon">
-                                    <img src="./asset/swift-light.svg" alt="swift ui image" width="35px">
-                                </span>
-                            </section>
-                        </section>
-                        <section class="card__links">
-                            <span><img src="./asset/email-light.svg" alt="email" width="25px"></span>
-                            <span><img src="./asset/github-light.svg" alt="git" width="25px"></span>
-                            <span><img src="./asset/link-light.svg" alt="link" width="25px"></span>
-                        </section>
-                    </article>
-                    
+            <!--  -->
+            <article class="card">
+              <span class="card__title">Mine Sweeper</span>
+              <section class="card__body">
+                <p class="card__body__img">
+                  <img
+                    src="./asset/projects/minesweeper.jpg"
+                    width="140px"
+                    alt="mine sweeper app"
+                  />
+                </p>
+                <section class="card__body__text">
+                  <span>
+                    Mine sweeper is a console application written in Java.
+                  </span>
+                  <span class="stack"> Stack: Java </span>
+                  <span class="card__body__text__icon">
+                    <img
+                      src="./asset/java-light.svg"
+                      alt="htnl image"
+                      width="30px"
+                    />
+                  </span>
                 </section>
-            </section>
-        </section>
+              </section>
+              <section class="card__links">
+                <span>
+                  <a href="https://github.com/petrdragonman/minesweeper">
+                    <img
+                      src="./asset/github-light.svg"
+                      alt="git"
+                      width="25px"
+                    />
+                  </a>
+                </span>
+              </section>
+            </article>
 
-        <section class="education" id="education-id">
-            <section class="education__content">
-                <article class="education__content__title">EDUCATION</article>
-                <section class="education__content__items">
-                    <article class="institute">
-                        <img src="./asset/TAFE-1.webp" alt="TAFE logo image" width="200px">
-                        <span class="institute__course">Java Programming</span>
-                        <span class="institute__name">TAFE</span>
-                        <span>Sydney Ultimo, 2024 </span>
-                        
-                    </article>
-                    <article class="institute">
-                        <img src="./asset/mendel-black.png" alt="Mendel Uni logo image" width="150px">
-                        <span class="institute__course">Mechanical Engineering</span>
-                        <span class="institute__name">Mendel University</span>
-                        <span>Brno, Czech Republec, 1992</span>
-                        
-                    </article>
+            <!--  -->
+            <article class="card">
+              <span class="card__title">eShop</span>
+              <section class="card__body">
+                <p class="card__body__img">
+                  <img
+                    src="./asset/projects/eShop.jpg"
+                    width="140px"
+                    alt="morse-translator app home screen"
+                  />
+                </p>
+                <section class="card__body__text">
+                  <span>
+                    eShop app is a React app using Firestore as DB alowing user
+                    to select paddle from a product page and add it to the cart
+                    for a purchase.
+                  </span>
+                  <span> Stack: React, Sass, JavaScript, Firestore. </span>
+                  <span class="card__body__text__icon">
+                    <img
+                      src="./asset/html5-light.svg"
+                      alt="htnl image"
+                      width="30px"
+                    />
+                    <img
+                      src="./asset/css-light.svg"
+                      alt="css image"
+                      width="35px"
+                    />
+                    <img
+                      src="./asset/js-light.svg"
+                      alt="js image"
+                      width="35px"
+                    />
+                    <img
+                      src="./asset/reactjs-light.svg"
+                      alt="js image"
+                      width="30px"
+                    />
+                  </span>
                 </section>
-            </section>
-        </section>
+              </section>
+              <section class="card__links">
+                <span>
+                  <a href="https://github.com/petrdragonman/eShop">
+                    <img
+                      src="./asset/github-light.svg"
+                      alt="git"
+                      width="25px"
+                    />
+                  </a>
+                </span>
+              </section>
+            </article>
 
-        <section class="contact" id="contact-id">
-            <section class="contact__content">
-                <article class="contact__content__title">CONTACT ME</article>
-                <section class="contact__content__items">
-                    <img class="petr" src="./asset/petr.jpeg" alt="photo of petr" width="300px" height="300px">
-                    <article class="about">
-                        <p class="about__text">
-                            I'm Petr, a mechanical engineer turned full-stack developer 
-                            based in Sydney, I bring a unique perspective to software 
-                            development. My engineering background fuels my passion 
-                            for creating efficient solutions and automating processes, 
-                            while my endless curiosity drives me to constantly explore 
-                            new technologies. 
-                        </p>
-                        <p>
-                            When I'm not coding, you'll find me on Sydney Harbour 
-                            as a competitive dragon boat racer. 
-                            As a multiple world champion in the sport, 
-                            I bring the same dedication and precision to my development 
-                            work that I apply to my athletic pursuits.
-                        </p>
-                    </article>
-                    <article class="contacts-list">
-                        <section class="contacts-list__item">
-                            <img class="icon" src="./asset/linkedin.svg" alt="logo of LinkedIn" width="25px">
-                        </section>
-                        <section class="contacts-list__item">
-                            <img class="icon" src="./asset/email.svg" alt="image of email" width="25px">
-                        </section>
-                        <section class="contacts-list__item">
-                            <img class="icon" src="./asset/github.svg" alt="logo of GidHub" width="30px">
-                        </section>
-                    </article>
+            <!--  -->
+            <article class="card">
+              <span class="card__title">Google Books</span>
+              <section class="card__body">
+                <p class="card__body__img">
+                  <img
+                    src="./asset/projects/google_books.jpg"
+                    width="140px"
+                    alt="morse-translator app home screen"
+                  />
+                </p>
+                <section class="card__body__text">
+                  <span>
+                    Google Books app is using the GoogleBooks API and enables
+                    user to search the vast database of books.
+                  </span>
+                  <span> Stack: React, Sass and JavaScript. </span>
+                  <span class="card__body__text__icon">
+                    <img
+                      src="./asset/html5-light.svg"
+                      alt="htnl image"
+                      width="30px"
+                    />
+                    <img
+                      src="./asset/css-light.svg"
+                      alt="css image"
+                      width="35px"
+                    />
+                    <img
+                      src="./asset/js-light.svg"
+                      alt="js image"
+                      width="35px"
+                    />
+                    <img
+                      src="./asset/reactjs-light.svg"
+                      alt="js image"
+                      width="30px"
+                    />
+                  </span>
                 </section>
-            </section>
+              </section>
+              <section class="card__links">
+                <span>
+                  <a href="https://github.com/petrdragonman/googleBooks">
+                    <img
+                      src="./asset/github-light.svg"
+                      alt="git"
+                      width="25px"
+                    />
+                  </a>
+                </span>
+              </section>
+            </article>
+            <!--  -->
+            <article class="card">
+              <span class="card__title">Fake OS</span>
+              <section class="card__body">
+                <p class="card__body__img">
+                  <img
+                    src="./asset/projects/FakeOS.png"
+                    width="140px"
+                    alt="morse-translator app home screen"
+                  />
+                </p>
+                <section class="card__body__text">
+                  <span>
+                    Fake OS is a copy of an older iOS. The only working features
+                    are current time and the Weather app. The app is fetching
+                    data from Weather Api.
+                  </span>
+                  <span> Stack: HTMl, SCSS and JavaScript. </span>
+                  <span class="card__body__text__icon">
+                    <img
+                      src="./asset/html5-light.svg"
+                      alt="htnl image"
+                      width="30px"
+                    />
+                    <img
+                      src="./asset/css-light.svg"
+                      alt="css image"
+                      width="35px"
+                    />
+                    <img
+                      src="./asset/js-light.svg"
+                      alt="js image"
+                      width="35px"
+                    />
+                  </span>
+                </section>
+              </section>
+              <section class="card__links">
+                <span>
+                  <a href="https://github.com/petrdragonman/fakeOS">
+                    <img
+                      src="./asset/github-light.svg"
+                      alt="git"
+                      width="25px"
+                    />
+                  </a>
+                </span>
+              </section>
+            </article>
+
+            <article class="card">
+              <span class="card__title">Morse-translator</span>
+              <section class="card__body">
+                <p class="card__body__img">
+                  <img
+                    src="./asset/projects/morse-translator.jpg"
+                    width="140px"
+                    alt="morse-translator app home screen"
+                  />
+                </p>
+                <section class="card__body__text">
+                  <span>
+                    Morse-translator is an app to translate from English to
+                    Morse-Code and reverse.
+                  </span>
+                  <span> Stack: HTMl, SCSS and JavaScript. </span>
+                  <span class="card__body__text__icon">
+                    <img
+                      src="./asset/html5-light.svg"
+                      alt="htnl image"
+                      width="30px"
+                    />
+                    <img
+                      src="./asset/css-light.svg"
+                      alt="css image"
+                      width="35px"
+                    />
+                    <img
+                      src="./asset/js-light.svg"
+                      alt="js image"
+                      width="35px"
+                    />
+                  </span>
+                </section>
+              </section>
+              <section class="card__links">
+                <span>
+                  <a href="https://github.com/petrdragonman/morse-translator">
+                    <img
+                      src="./asset/github-light.svg"
+                      alt="git"
+                      width="25px"
+                    />
+                  </a>
+                </span>
+              </section>
+            </article>
+
+            <article class="card">
+              <span class="card__title">Hangman</span>
+              <section class="card__body">
+                <p class="card__body__img">
+                  <img
+                    src="./asset/projects/hangman.jpg"
+                    width="140px"
+                    alt="iRemember app home screen"
+                  />
+                </p>
+                <section class="card__body__text">
+                  <span> Hangman is an old word guessing game. </span>
+                  <span> Stack: HTMl, SCSS and JavaScript. </span>
+                  <span class="card__body__text__icon">
+                    <img
+                      src="./asset/html5-light.svg"
+                      alt="htnl image"
+                      width="30px"
+                    />
+                    <img
+                      src="./asset/css-light.svg"
+                      alt="css image"
+                      width="35px"
+                    />
+                    <img
+                      src="./asset/js-light.svg"
+                      alt="js image"
+                      width="35px"
+                    />
+                  </span>
+                </section>
+              </section>
+              <section class="card__links">
+                <span>
+                  <a href="https://github.com/petrdragonman/hangman">
+                    <img
+                      src="./asset/github-light.svg"
+                      alt="git"
+                      width="25px"
+                    />
+                  </a>
+                </span>
+              </section>
+            </article>
+
+            <article class="card">
+              <span class="card__title">iRemember</span>
+              <section class="card__body">
+                <p class="card__body__img">
+                  <img
+                    src="./asset/projects/iRemember.png"
+                    width="150px"
+                    alt="iRemember app home screen"
+                  />
+                </p>
+                <section class="card__body__text">
+                  <span>
+                    iRemember is a simple iOS app to store all of your login or
+                    any similar details securely into your personal iCloud
+                    account.
+                  </span>
+                  <span> Stack: Swift UI and Swift Data. </span>
+                  <span class="card__body__text__icon">
+                    <img
+                      src="./asset/swift-light.svg"
+                      alt="swift ui image"
+                      width="35px"
+                    />
+                  </span>
+                </section>
+              </section>
+              <section class="card__links">
+                <span>
+                  <a
+                    href="https://apps.apple.com/au/app/iremember/id1668287482"
+                  >
+                    <img src="./asset/app_store.svg" alt="git" width="25px" />
+                  </a>
+                </span>
+                <span>
+                  <a href="iRemember/iRemember.html">
+                    <img src="./asset/more_info.svg" alt="git" width="25px" />
+                  </a>
+                </span>
+              </section>
+            </article>
+          </section>
         </section>
-    </main>  
+      </section>
+
+      <section class="education" id="education-id">
+        <section class="education__content">
+          <article class="education__content__title">EDUCATION</article>
+          <section class="education__content__items">
+            <article class="institute">
+              <img
+                src="./asset/nology.jpeg"
+                alt="_nology logo image"
+                width="100px"
+              />
+              <span class="institute__course">Full Stack Engineer Program</span>
+              <span class="institute__name">_nology</span>
+              <span>Sydney, 2024 </span>
+            </article>
+            <article class="institute">
+              <img
+                src="./asset/TAFE-1.webp"
+                alt="TAFE logo image"
+                width="200px"
+              />
+              <span class="institute__course">Java Programming</span>
+              <span class="institute__name">TAFE</span>
+              <span>Sydney Ultimo, 2004 </span>
+            </article>
+            <article class="institute">
+              <img
+                src="./asset/mendel-black.png"
+                alt="Mendel Uni logo image"
+                width="150px"
+              />
+              <span class="institute__course">Mechanical Engineering</span>
+              <span class="institute__name">Mendel University</span>
+              <span>Brno, Czech Republec, 1992</span>
+            </article>
+          </section>
+        </section>
+      </section>
+
+      <section class="contact" id="contact-id">
+        <section class="contact__content">
+          <article class="contact__content__title">CONTACT ME</article>
+          <section class="contact__content__items">
+            <img
+              class="petr"
+              src="./asset/petr.jpeg"
+              alt="photo of petr"
+              width="300px"
+              height="300px"
+            />
+            <article class="about">
+              <p class="about__text">
+                I'm Petr, a mechanical engineer turned full-stack developer
+                based in Sydney, I bring a unique perspective to software
+                development. My engineering background fuels my passion for
+                creating efficient solutions and automating processes, while my
+                endless curiosity drives me to constantly explore new
+                technologies.
+              </p>
+              <p>
+                When I'm not coding, you'll find me on Sydney Harbour as a
+                competitive dragon boat racer. As a multiple world champion in
+                the sport, I bring the same dedication and precision to my
+                development work that I apply to my athletic pursuits.
+              </p>
+            </article>
+            <article class="contacts-list">
+              <section class="contacts-list__item">
+                <a href="https://www.linkedin.com/in/petr-valouch-a495723b/">
+                  <img src="./asset/linkedin.svg" alt="LinkedIn" width="25px" />
+                </a>
+              </section>
+              <section class="contacts-list__item">
+                <a href="https://github.com/petrdragonman">
+                  <img src="./asset/github.svg" alt="git" width="25px" />
+                </a>
+              </section>
+            </article>
+          </section>
+        </section>
+      </section>
+    </main>
     <footer class="footer">
-        <section class="footer__content">
-            <section class="footer__content__items"></section>
-                <span>Petr Valouch @2024</span>
-        </section>
-    </footer>  
-</body>
+      <section class="footer__content">
+        <section class="footer__content__items"></section>
+        <span>Petr Valouch @2025</span>
+      </section>
+    </footer>
+  </body>
 </html>
