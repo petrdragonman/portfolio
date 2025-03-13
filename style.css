@@ -245,11 +245,15 @@
   padding: 40px 0px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
+  align-items: center;
   color: #ffe6c7;
   gap: 6px;
 }
 .education__content .institute img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-bottom: 10px;
 }
 .education__content .institute__name {

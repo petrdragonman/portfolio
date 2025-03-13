@@ -29,11 +29,15 @@
       padding: v.$section-padding;
       display: flex;
       flex-direction: column;
-      justify-content: start;
+      justify-content: center;
+      align-items: center;
       color: c.$orange-light;
       gap: 6px;
 
       img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding-bottom: 10px;
       }
       &__name {
