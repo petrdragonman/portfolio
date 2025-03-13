@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 40px;
-  background-color: #FFE6C7;
+  background-color: #ffe6c7;
 }
 .navbar__content {
   width: 80%;
@@ -24,7 +24,7 @@
 
 .hero {
   height: 150px;
-  background-color: #FFE6C7;
+  background-color: #ffe6c7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +44,7 @@
 
 .skills {
   background-color: #454545;
-  color: #FFE6C7;
+  color: #ffe6c7;
   display: flex;
   justify-content: center;
   padding: 40px 0px;
@@ -68,7 +68,7 @@
   gap: 3em;
 }
 .skills__content__items__card {
-  color: #FFE6C7;
+  color: #ffe6c7;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -77,7 +77,7 @@
 }
 
 .projects {
-  background-color: #FFE6C7;
+  background-color: #ffe6c7;
   color: #454545;
   display: flex;
   justify-content: center;
@@ -102,7 +102,7 @@
 }
 .projects__content .card {
   background-color: #454545;
-  color: #FFE6C7;
+  color: #ffe6c7;
   border-radius: 10px;
   width: 350px;
   padding: 10px;
@@ -152,11 +152,16 @@
 .projects__content .card__body__text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
   gap: 10px;
 }
+
+.stack {
+  width: 100%;
+}
+
 @media screen and (min-width: 769px) {
   .projects__content .card__body__text {
     padding-left: 10px;
@@ -180,8 +185,9 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 20px;
+    padding-left: 10px;
   }
 }
 .projects__content .card__links {
@@ -206,7 +212,7 @@
 
 .education {
   background-color: #454545;
-  color: #FFE6C7;
+  color: #ffe6c7;
   display: flex;
   justify-content: center;
   padding: 40px 0px;
@@ -234,7 +240,7 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-  color: #FFE6C7;
+  color: #ffe6c7;
 }
 .education__content .institute img {
   padding-bottom: 10px;
@@ -247,7 +253,7 @@
 }
 
 .contact {
-  background-color: #FFE6C7;
+  background-color: #ffe6c7;
   color: #454545;
   display: flex;
   justify-content: center;
@@ -333,7 +339,7 @@
 }
 
 .footer {
-  background-color: #FFE6C7;
+  background-color: #ffe6c7;
   color: #454545;
   display: flex;
   justify-content: center;
